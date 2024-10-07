@@ -25,25 +25,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    // function to create a JSON file from the response data; need this to get a better look at the details for each neo. Adapted the method from 'https://stackoverflow.com/questions/19327749/javascript-blob-filename-without-link'
-    function createJsonFile(data) {
-        const dataStr = JSON.stringify(data, null, 2);
-        const blob = new Blob([dataStr], { type: "application/json" });
-        const url = window.URL.createObjectURL(blob);
-
-        // temporary link element
-        const a = document.createElement("a");
-        a.style.display = "none";  // Hide the link
-        a.href = url;
-        a.download = "asteroid_data_previous_day.json";
-
-        // appends link to body, triggers it, then removes the link
-        document.body.appendChild(a);
-        a.click();
-        window.URL.revokeObjectURL(url); // release the object URL
-        document.body.removeChild(a);
-    }
-
     // calculate start and dates for the previous day
     const today = new Date();
     const yesterday = new Date();
