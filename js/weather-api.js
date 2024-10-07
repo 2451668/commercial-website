@@ -17,20 +17,45 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // to parse the response to JSON
             const data = await response.json();
-            console.log(data);
+            console.log("Full Weather Data Response:", data); // Log entire response for debugging
 
-            displayWeatherData(data);
+            // prepare the data for visualisation
+            prepareDataForVisualisations(data);
         } catch (error) {
             console.error("Failed to fetch weather data:", error);
+        }
+    }
+
+    // function to prepare data for vis
+    function prepareDataForVisualisations(data) {
+        if (data?.timelines?.daily) {
+            const dailyData = data.timelines.daily;
+
+            // temp and humidity data
+            const temperatureData = dailyData.map(day => ({
+                date: day.startTime,
+                temperature: day.values.temperatureAvg
+            }));
+
+            const humidityData = dailyData.map(day => ({
+                date: day.startTime,
+                humidity: day.values.humidityAvg
+            }));
+
+            // calls functions to create simple vis
+            createTemperatureLineChart(temperatureData);
+            createHumidityBarChart(humidityData);
+        } else {
+            console.error("No daily data available for visualisation");
         }
     }
 
     // function to display weather data in the console for demo purposes
     function displayWeatherData(data) {
         console.log("Weather Data for Selected Location:");
-        console.log("Temperature:", data?.timelines?.daily[0]?.values?.temperature);
-        console.log("Humidity:", data?.timelines?.daily[0]?.values?.humidity);
-        console.log("Precipitation:", data?.timelines?.daily[0]?.values?.precipitation);
+        console.log("Temperature:", data?.timelines?.daily[0]?.values?.temperatureAvg); 
+        console.log("Humidity:", data?.timelines?.daily[0]?.values?.humidityAvg); 
+        console.log("Precipitation Probability:", data?.timelines?.daily[0]?.values?.precipitationProbability); 
     }
 
     // fetch weather data for Johannesburg
