@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // defining the navigation items
     const navItems = [
-        { text: "Home", href: "index.html" },
+        { text: "Home", href: "../index.html" },
         { text: "Design", href: "pages/design.html" },
         { text: "Theory", href: "pages/theory.html" },
         { text: "Data", href: "pages/data.html" },
