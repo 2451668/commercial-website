@@ -51,4 +51,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // injects nav into the DOM
     navbar.appendChild(navContainer);
+
+    // sticky navbar logic
+    const sticky = navContainer.offsetTop;
+    window.onscroll = function() {
+        if (window.pageYOffset > sticky) {
+            navContainer.classList.add("sticky");
+        } else {
+            navContainer.classList.remove("sticky");
+        }
+    };
 });

@@ -71,15 +71,13 @@
     opacity: 0.3;
 }
 
-/* bar chart for largest asteroids */
-#largest-asteroids-chart {
-    width: 100%;
-    max-width: 800px;
-    height: 500px;
-    margin: 20px auto;
-    padding: 10px;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+/* css for the bubble chart layout */
+.bubble-chart {
+    display: block;
+    margin: 0 auto;
+}
+
+text {
+    font-family: Arial, sans-serif;
+    pointer-events: none;
 }
