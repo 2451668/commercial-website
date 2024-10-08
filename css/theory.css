@@ -1,0 +1,101 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.theory-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.theory-content h2 {
+    font-size: 2.5rem;
+    color: #303030;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.theory-content h3 {
+    font-size: 2rem;
+    color: #508fb9;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.theory-content h4 {
+    font-size: 1.8rem;
+    color: #508fb9;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.theory-content p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.theory-content ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+}
+
+.theory-content ul li {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.theory-content a {
+    color: #508fb9;
+    text-decoration: underline;
+}
+
+.theory-content a:hover {
+    color: #407099;
+}
+
+.section {
+    margin-bottom: 3rem;
+    padding: 2rem 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.section-center {
+    text-align: center;
+}
+
+.section-left {
+    text-align: left;
+}
+
+.theory-content {
+    padding: 50px;
+    border-radius: 10px;
+    background-color: #f4f4f4;
+}
+
+@media (max-width: 768px) {
+    .theory-content {
+        padding: 20px;
+    }
+
+    .theory-content h2 {
+        font-size: 2rem;
+    }
+
+    .theory-content h3 {
+        font-size: 1.7rem;
+    }
+
+    .theory-content h4 {
+        font-size: 1.5rem;
+    }
+}

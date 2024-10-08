@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/theory.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <title>Theory - NEO Visualisation</title>
+</head>
+<body>
+    <div id="navbar" class="navbar"></div>
+    
+    <section id="theory">
+        <div class="theory-content">
+            <h2>Theoretical Framework and Rationale</h2>
+
+            <h3>Introduction</h3>
+            <p>
+                This website is designed to explore and present Near-Earth Object (NEO) data through interactive data visualisations. The aim is to provide users with an accessible way to understand the significance of NEOs, their proximity to Earth, and their potential hazards.
+            </p>
+
+            <h3>Rationale for Data Visualisations</h3>
+            <p>
+                The choice of data visualisation was driven by the need to display large amounts of data in a concise and visually engaging manner. The bubble chart was chosen to represent the relative size and hazardous status of NEOs, as it allows for quick comparisons between different objects. The bar chart was chosen to highlight the closest approaching NEOs, providing users with an immediate sense of scale and distance.
+            </p>
+            <p>
+                The aim was to make the data visualisations informative while also offering an engaging user experience. The bubble chart in particular allows users to interact with the data, offering a more immersive understanding of the varying sizes and proximity of NEOs.
+            </p>
+
+            <h3>UI/UX Decisions</h3>
+            <p>
+                The interface was designed to be intuitive and user-friendly, with a focus on simplicity and accessibility. The use of contrasting colours helps to distinguish between different data points, such as hazardous and non-hazardous asteroids. The responsive design ensures the website can be viewed across multiple devices, offering a consistent user experience.
+            </p>
+            <p>
+                The placement of the visualisations was chosen to give them prominence on the data page, encouraging user interaction while maintaining clarity. Furthermore, a clean and minimal design was used to avoid overwhelming users with information, providing clear labels, legends, and tooltips to guide the user.
+            </p>
+
+            <h3>Challenges and Solutions</h3>
+            <p>
+                One of the challenges faced was ensuring that the data visualisations were both informative and engaging. This was addressed by experimenting with different chart types and using D3.js to add interactive elements such as tooltips and dynamic filtering. Extensive research into best practices for data visualisation helped guide these decisions.
+            </p>
+            <p>
+                Another challenge involved retrieving live data from the NASA API in real time, while ensuring the site remained performant. A careful balance was achieved by limiting the amount of data requested at a time and displaying only the most relevant NEOs.
+            </p>
+
+            <h3>Essay: Data Visualisation in Environmental Contexts</h3>
+
+            <h4>Introduction</h4>
+            <p>
+                This marks the written piece for the semester, where we consider the effects of sound user design and coherent data visualisation in a piece of our choosing. I always try to orient my coursework around South Africa and the community around me, as it makes for a convenient way to both engage with schoolwork and explore topics related to the country, allowing me to become more knowledgeable.
+            </p>
+            <p>
+                Recently, I have developed an interest in plant and tree life, with my work last semester being based around the themes of deforestation and forestry in South Africa. I would like to continue with that focus here, and so the piece I have decided to work with is an interactive forestry map of South Africa, specifically in Kwa-Zulu Natal, as it has the densest segments of forestry in the country.
+            </p>
+
+            <h4>Data Visualisation Piece Overview</h4>
+            <p>
+                The map is taken from Global Forest Watch (GFW), an interactive platform that tracks growth, deforestation, and conservation efforts from around the globe, with data from South Africa as well. In addition, GFW uses satellite data and ground reporting to provide real-time information about tree cover loss, forest fires, and conservation efforts.
+            </p>
+
+            <h4>Visualisation Techniques and User Interface</h4>
+            <p>
+                The Global Forest Watch map is an excellent example of effective data visualisation. It utilises various visualisation techniques such as heat maps and satellite imagery overlays to communicate the extent of deforestation. The platform is also designed with user-centred principles in mind, ensuring ease of navigation and a clear, intuitive interface that allows both experts and the general public to engage with the data.
+            </p>
+            <p>
+                The user interface is clean, with easy-to-understand legends, interactive layers, and the ability to zoom in and out for finer or broader views of the forest cover. Users can also click on specific regions for more detailed data on deforestation rates, causes, and conservation efforts.
+            </p>
+
+            <h4>Impact and Engagement</h4>
+            <p>
+                One of the main strengths of the Global Forest Watch platform is its ability to engage users with real-time data. By providing clear and accessible visual representations of deforestation, it not only informs users but also encourages engagement with environmental issues. The inclusion of features such as email alerts for specific regions or types of forest cover loss makes the platform interactive and action-oriented.
+            </p>
+            <p>
+                In terms of impact, the platform’s data is widely used by environmental organisations, policymakers, and activists to monitor deforestation trends and advocate for better environmental policies. It has also become a valuable tool for educational purposes, raising awareness about the importance of forests and the threats they face.
+            </p>
+
+            <h4>Conclusion</h4>
+            <p>
+                In conclusion, Global Forest Watch serves as a powerful tool for visualising and understanding deforestation patterns. Its user-centric design, combined with sophisticated data visualisation techniques, makes it an effective platform for both professionals and the general public. By translating complex environmental data into accessible visuals, GFW helps raise awareness about deforestation and encourages users to take action to protect forests.
+            </p>
+
+            <h3>References</h3>
+            <ul>
+                <li>Global Forest Watch. (2024). Tree Cover Loss Analysis. Retrieved from https://www.globalforestwatch.org/map/country/ZAF/?map=eyJjYW5Cb3VuZCI6ZmFsc2V9</li>
+                <li>Liu, J., Tang, H., Zhang, J., Shi, T. (2014). “Glass landslide”—the use of 3D visualization in environmental monitoring. Environmental Earth Sciences.</li>
+                <li>The Basic Principles of User Interface Design. (2022). Retrieved from UXPin Blog.</li>
+                <li>Wästberg, B. S., Billger, M., Adelfio, M. (2020). A User-Based Look at Visualization Tools for Environmental Data and Suggestions for Improvement—An Inventory among City Planners in Gothenburg. Sustainability, 12(7), 2882.</li>
+            </ul>
+        </div>
+    </section>
+
+    <div id="footer" class="footer"></div>
+
+    <script src="../js/navbar.js"></script>
+    <script src="../js/footer.js"></script>
+</body>
+</html>

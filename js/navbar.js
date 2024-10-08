@@ -17,11 +17,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // defining the navigation items
     const navItems = [
-        { text: "Home", href: "../index.html" },
-        { text: "Design", href: "pages/design.html" },
-        { text: "Theory", href: "pages/theory.html" },
-        { text: "Data", href: "pages/data.html" },
-        { text: "About", href: "pages/about.html" }
+        { text: "Home", href: "index.html" },
+        { text: "Design", href: "design.html" },
+        { text: "Theory", href: "theory.html" },
+        { text: "Data", href: "data.html" },
+        { text: "About", href: "about.html" }
     ];
 
     // getting current page path for link highlighting
@@ -51,14 +51,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // injects nav into the DOM
     navbar.appendChild(navContainer);
-
-    // sticky navbar logic
-    const sticky = navContainer.offsetTop;
-    window.onscroll = function() {
-        if (window.pageYOffset > sticky) {
-            navContainer.classList.add("sticky");
-        } else {
-            navContainer.classList.remove("sticky");
-        }
-    };
 });
