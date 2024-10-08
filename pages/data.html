@@ -16,21 +16,49 @@
     <!-- main content -->
     <div class="container">
         <section class="data-visualisation-section">
-            <h1>Near-Earth Object Data Visualisations</h1>
-            <p>Sample text</p>
-            
-            <!-- asteroid data vis-->
-            <div class="chart-title">Asteroid Data Overview</div>
-            <div id="asteroid-data-chart"></div> 
+            <h1>Top 10 Closest Asteroids to Earth from the previous week</h1>
+            <p>Below is a ranking of the asteroids that had the closest approach to Earth just on the 6th of October.</p>
+
+            <!-- bar Chart Container -->
+            <div id="closest-asteroids-chart"></div>
         </section>
     </div>
+
+    <!-- modal for displaying detailed asteroid info -->
+    <div id="asteroid-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <div id="asteroid-details"></div>
+        </div>
+    </div>
+
+    <!-- second data vis, i.e.largest asteroids -->
+    <section class="data-visualisation-section">
+        <h1>Top 10 Largest Asteroids that Approached Earth (Previous Day)</h1>
+        <p>Below is a ranking of the asteroids based on their estimated size in kilometers.</p>
+
+        <!-- bar chart container -->
+        <div id="largest-asteroids-chart"></div>
+    </section>
 
     <!-- footer Injection -->
     <div id="footer" class="footer"></div>
 
     <script src="../js/navbar.js"></script>
     <script src="../js/footer.js"></script>
-    <script src="../js/nasa-api.js"></script> 
-    <script src="../js/data-visuals.js"></script> 
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="../js/data-visuals.js"></script>
+    <script src="../js/neo-vis.js"></script> 
+    <script src="../js/interactivity.js"></script> 
+
+    <script>
+        // initialises data fetching and visualisation once page loads
+        fetchAsteroidData(function(filteredData) {
+            createClosestAsteroidsBarChart(filteredData); // make bar chart
+            createLargestAsteroidsSingleLineBubbleChart(filteredData); // make bubble chart
+            addInteractivity(); // tooltips and interactions
+        });
+    </script>
+
 </body>
 </html>
