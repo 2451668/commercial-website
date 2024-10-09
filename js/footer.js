@@ -14,10 +14,10 @@ document.addEventListener("DOMContentLoaded", () => {
     aboutSection.appendChild(aboutTitle);
 
     const aboutText = document.createElement("p");
-    aboutText.textContent = "I am a fourth-year undergraduate enrolled in the Digital Art & Game Design programme at the University of Witwatersrand in central Johannesburg. This website serves as my commercial-grade submission for Interactive Media: WSOA3029A.";
+    aboutText.textContent = "I am a fourth-year undergraduate enrolled in the Digital Art & Game Design programme at the University of Witwatersrand in central Johannesburg. This website serves as my third submission for Interactive Media: WSOA3029A.";
     aboutSection.appendChild(aboutText);
 
-    // contact Section and demo details
+    // contact section and details
     const contactSection = document.createElement("div");
     contactSection.classList.add("footer-section");
 
@@ -49,3 +49,4 @@ document.addEventListener("DOMContentLoaded", () => {
     // inject the footer container into DOM
     footer.appendChild(footerContainer);
 });
+

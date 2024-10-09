@@ -1,4 +1,3 @@
-// function to create the bar chart for closest asteroids
 function createClosestAsteroidsBarChart(filteredAsteroids) {
     // sort the asteroids by miss distance
     const closestAsteroids = filteredAsteroids

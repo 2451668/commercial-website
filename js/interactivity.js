@@ -1,4 +1,3 @@
-// function to handle tooltips and modals for both charts
 function addInteractivity() {
     const tooltip = d3.select("body").append("div").attr("class", "tooltip");
 

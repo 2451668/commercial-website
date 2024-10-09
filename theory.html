@@ -20,31 +20,33 @@
                 This website is designed to explore and present Near-Earth Object (NEO) data through interactive data visualisations. The aim is to provide users with an accessible way to understand the significance of NEOs, their proximity to Earth, and their potential hazards.
             </p>
 
-            <h3>Rationale for Data Visualisations</h3>
+            <h3>Rationale</h3>
             <p>
-                The choice of data visualisation was driven by the need to display large amounts of data in a concise and visually engaging manner. The bubble chart was chosen to represent the relative size and hazardous status of NEOs, as it allows for quick comparisons between different objects. The bar chart was chosen to highlight the closest approaching NEOs, providing users with an immediate sense of scale and distance.
+                The choice of data visualisation was driven by the need to display large amounts of data in a concise and engaging manner. The bubble chart was chosen to represent the relative size and various status of NEOs, as it allows for quick comparisons between different objects. The bar chart was chosen to highlight the closest approaching NEOs, providing users with a sense of scale and distance.
             </p>
             <p>
-                The aim was to make the data visualisations informative while also offering an engaging user experience. The bubble chart in particular allows users to interact with the data, offering a more immersive understanding of the varying sizes and proximity of NEOs.
+                The aim was to make the data visualisations informative while also offering a somewhat engaging user experience, via tooltips and popup windows, in addition to an external reference to NASA's affiliate site should the user want to learn more about a particular NEO.
             </p>
 
-            <h3>UI/UX Decisions</h3>
+            <h3>UI/UX</h3>
             <p>
-                The interface was designed to be intuitive and user-friendly, with a focus on simplicity and accessibility. The use of contrasting colours helps to distinguish between different data points, such as hazardous and non-hazardous asteroids. The responsive design ensures the website can be viewed across multiple devices, offering a consistent user experience.
+                The interface was designed to be intuitive and user-friendly, with a focus on simplicity and accessibility. The use of simple and bold contrasting colours helps to distinguish between different visual elements and break up space. 
             </p>
             <p>
                 The placement of the visualisations was chosen to give them prominence on the data page, encouraging user interaction while maintaining clarity. Furthermore, a clean and minimal design was used to avoid overwhelming users with information, providing clear labels, legends, and tooltips to guide the user.
             </p>
 
             <h3>Challenges and Solutions</h3>
+        
             <p>
-                One of the challenges faced was ensuring that the data visualisations were both informative and engaging. This was addressed by experimenting with different chart types and using D3.js to add interactive elements such as tooltips and dynamic filtering. Extensive research into best practices for data visualisation helped guide these decisions.
-            </p>
-            <p>
-                Another challenge involved retrieving live data from the NASA API in real time, while ensuring the site remained performant. A careful balance was achieved by limiting the amount of data requested at a time and displaying only the most relevant NEOs.
+                The biggest challange was finding a resource that offered an accessible API. Many I attempted to retrieve had complex outputs or whose data retrieval was a paid service, etc. NASA's api is accessible and readily available, and laid a good basis to draw a site about a space-related site
             </p>
 
             <h3>Essay: Data Visualisation in Environmental Contexts</h3>
+
+            <p>
+                The following is the essay we had written this semester on data visualisation, and its application in a particular context.
+            </p>
 
             <h4>Introduction</h4>
             <p>
@@ -92,7 +94,7 @@
 
     <div id="footer" class="footer"></div>
 
-    <script src="../js/navbar.js"></script>
-    <script src="../js/footer.js"></script>
+    <script src="js/navbar.js"></script>
+    <script src="js/footer.js"></script>
 </body>
 </html>

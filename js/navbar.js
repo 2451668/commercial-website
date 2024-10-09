@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const logo = document.createElement("a");
     logo.href = "index.html";
     logo.classList.add("logo");
-    logo.textContent = "SA's Climate";
+    logo.textContent = "NEOS";
 
     // creating the list for navigation links
     const navList = document.createElement("ul");
